@@ -35,19 +35,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #ifdef RGBLIGHT_ENABLE
     #undef RGBLED_NUM
-    #define RGBLIGHT_ANIMATIONS
     #define RGBLED_NUM 27
     /* #define RGBLIGHT_LIMIT_VAL 120 */
     /* #define RGBLIGHT_HUE_STEP 185 */
     /* #define RGBLIGHT_SAT_STEP 100 */
     /* #define RGBLIGHT_VAL_STEP 50 */
-    #define RGBLIGHT_DEFAULT_HUE 190
-    /* #define RGBLIGHT_DEFAULT_SAT 200 */
+    #define RGBLIGHT_DEFAULT_HUE 100
+    #define RGBLIGHT_DEFAULT_SAT 100
+    #define RGBLIGHT_DEFAULT_VAL 100
+    #define RGBLIGHT_DEFAULT_SPD 100
     #define RGBLIGHT_EFFECT_BREATHING
     /* #define RGBLIGHT_MODE_BREATHING 2 */
-    #define RGBLIGHT_SLEEP
     #define RGBLIGHT_SPLIT
-    #define RGBLIGHT_DEFAULT_MODE RGBLIGHT_MODE_BREATHING
+    #define RGBLIGHT_DEFAULT_MODE RGBLIGHT_MODE_BREATHING + 1
 #endif
 
 #define OLED_FONT_H "keyboards/crkbd/lib/glcdfont.c"
